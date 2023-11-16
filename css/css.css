@@ -1,0 +1,526 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+body{
+    height: 100%;
+    padding: 80px 0 0 0;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+/*row0手機固定的bar*/
+.row0{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top:0;
+}
+.row0_container_grid_phone{
+    padding: 15px 0 10px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-family: "Noto Sans TC", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+/*變成電腦的時候，隱藏手機的*/
+@media(min-width:720px){
+    .row0_container_grid_phone{
+        display: none;
+    }
+}
+/*電腦固定的bar*/
+.row0_container_grid_computer{
+    display: none;
+}
+/*變成手機的時候，隱藏電腦的*/
+@media(min-width:720px){
+    .row0_container_grid_computer{
+        display: block;
+        padding: 15px 0 10px 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 0 10px;
+}
+a.search-button_a{
+    margin: 0;
+}
+a.Service{
+    margin: 0;
+}
+a.Informattion{
+    margin: 0;
+}
+a.Category{
+    margin: 0;
+}
+a.Contacts{
+    margin: 0;
+}
+.clock_grid{
+    display: grid;
+    grid-template-columns: 60px auto;
+    align-items: center;
+}
+
+ul.menu{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    padding: 0;
+    align-items: center/*橫排置中*/
+}
+
+li{
+    margin: 0 10px;
+    }
+
+.logo{
+    width:100%;
+    height: 40px;
+}
+
+/*row1封面*/
+.row1_container_grid{
+    margin: 0 auto;
+    background-image: url(../images/01-trauringe-bg2.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+/*變成電腦的時候換照片*/
+@media(min-width:720px){
+    .row1_container_grid{
+        background-position: right;
+        background-image: url(../images/01-trauringe-bg.jpg);
+    }
+}
+
+.row1-text{
+    padding-top: 250px;
+    text-align: center;
+}
+/*變成電腦的時候靠左排*/
+@media(min-width:720px){
+    .row1-text{
+        padding-top: 250px;
+        padding-bottom: 200px;
+        text-align: left;
+        margin-left: 60px;
+    }
+}
+
+.row1-title{
+    font-size: 30px;
+}
+
+.row1-introduce{
+    width: 60%;
+    margin: 15px auto;
+}
+/*變成電腦的時候靠左排*/
+@media(min-width:720px){
+    .row1-introduce{
+        text-align: left;
+        margin: 15px 0;
+        width: 450px;
+    }
+}
+.Shop-button{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 10px 40px 10px 40px;
+    width: 60%;
+    margin: 0 auto;
+}
+/*變成電腦的時候靠左排*/
+@media(min-width:720px){
+    .Shop-button{
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 10px 40px 10px 40px;
+        width: 140px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+/*row28很多則貼文的區塊*/
+.category-title{
+    font-size: 20px;
+    text-align: center;
+    margin:30px 0;
+}
+.post-area{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+/*變成電腦的時候四篇貼文並排*/
+@media(min-width:720px){
+    .post-area{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+.post{
+    border: 1px solid rgb(235, 235, 235);
+    margin: 5px;
+}
+.product-photo{
+    width: 150px;
+    margin: 10px 0;
+}
+.ring-introduction_and_price{
+    margin: 0 15px;
+}
+.ring-introduction{
+    font-size: 10px;
+    margin: 0 auto;
+}
+.price{
+    margin: 10px 0;
+}
+
+
+/*row3三則貼文的區塊*/
+.category-post_computer{
+    display:none;
+}
+/*變成電腦的時候出現*/
+@media(min-width:720px){
+    .category-post_computer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/*變成電腦的時候隱藏*/
+@media(min-width:720px){
+    .category-post_photo{
+        display:none;
+    }
+}
+
+.category-post{
+}
+/*變成電腦的時候齊左*/
+@media(min-width:720px){
+    .category-post{
+        text-align: center;
+        padding: 10px;
+        display: block;
+        font-size: 21px;
+    }
+}
+.category-photo{
+    width: 100%;
+    display: block;
+}
+.category-photo2{
+    width: 150px;
+}
+.more{
+    font-size:16px;
+    color: rgb(100, 100, 100);
+}
+.grid2-text-title{
+    font-size: 16px;
+}
+.grid2-more{
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+.grid2{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start
+}
+.grid2-text{
+    margin: 10px 20px;
+}
+
+
+/*row4設計介紹1*/
+.row4_container_grid-phone{
+    border: 1px solid rgb(236, 236, 236);
+}
+/*變成電腦的時候消失*/
+@media(min-width:720px){
+    .row4_container_grid-phone{
+        display: none;
+    }
+}
+.row4_container_grid-computer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*變成手機的時候出現*/
+@media(max-width:720px){
+    .row4_container_grid-computer{
+    display: none;    
+    }
+}
+
+
+.row4-img{
+    color: rgb(100, 100, 100);
+}
+/*手機*/
+.row4-text{
+    
+    padding: 40px 20px 20px 20px ;
+}/*換成電腦*/
+@media(min-width:720px){
+    .row4-text{
+        border: 1px solid rgb(226, 226, 226);
+        padding-top: 40px;
+    }
+}
+.row4-introduce{
+    width: 300px;
+    color: rgb(100, 100, 100);
+    line-height: 150%;
+}
+.row4-introduce2{
+    color: rgb(100, 100, 100);
+    line-height: 150%;
+}
+.Get-started-button{
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(100, 100, 100);
+    padding: 10px 40px 10px 40px;
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+/*變成電腦的時候齊左*/
+@media(min-width:720px){
+    .Get-started-button{
+        margin: 15px 0;
+        padding:0;
+        width: 140px;
+        text-align: center;
+        padding: 10px;
+        display: block;
+    }
+}
+.category-title2{
+    font-size: 20px;
+    margin:15px 0;
+}
+
+
+/*row5四個icon跟介紹*/
+.icon_grid{
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+/*變成電腦的時候分成四塊*/
+@media(min-width:720px){
+    .icon_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 60px;
+    }
+}
+
+.icon_grid2{
+    display: grid;
+    grid-template-columns:150px auto;
+    align-items: center;
+}
+/*變成電腦的時候不要grid*/
+@media(min-width:720px){
+    .icon_grid2{
+        display: block;
+        text-align: center;
+    }
+}
+.user{
+    display: grid;
+    grid-template-columns:auto auto;
+    justify-content: left;
+    align-items: center;
+    margin-top: 25px;
+}
+.name{
+    margin-left: 10px;
+}
+
+/*手機的只有顯示一則*/
+.user_grid{
+    display: grid;
+    grid-template-columns:auto;
+}
+/*變成電腦的時候顯示三則*/
+@media(min-width:720px){
+    .user_grid{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    }
+}
+
+.user-1{
+    display: none;
+    margin: 0 auto;
+}
+/*變成電腦的時候隱藏*/
+@media(min-width:720px){
+    .user-1{
+        display: block;
+    }
+}
+
+.user-2{
+    margin: 0 auto;
+}
+
+.user-3{
+    display: none;
+    margin: 0 auto;
+}
+/*變成電腦的時候隱藏*/
+@media(min-width:720px){
+    .user-3{
+         display: block;
+    }
+}
+
+.symbol{
+    width: 40px;
+    margin-top: 25px;
+}
+.user-comments{
+    width: 250px;
+    line-height: 150%;
+    color:rgb(100, 100, 100);
+    margin-top: 25px;
+}
+
+/*搜尋*/
+.row8{
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #ccc;
+}
+.search-box{
+    color: #ccc;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px 20px 40px;
+    margin: 10px auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.search-button{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+    padding: 20px 80px 20px 80px;
+    margin: 10px auto;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.search-instructions{
+    color:rgb(100, 100, 100);
+    line-height: 150%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*手機*/
+.search-list{
+    justify-content: space-between;
+}
+/*變成電腦的時候grid*/
+@media(min-width:720px){
+    .search-list{
+        display: grid;
+        grid-template-columns:auto auto;
+        background-color: rgb(255, 255, 255);
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+
+/*最下面*/
+.row9{
+    background-color: rgb(255, 255, 255);
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.row9-title{
+    font-size: 20px;
+    color:rgb(100, 100, 100);
+    margin-top: 45px;
+}
+.row9_container_grid{
+    display: block;
+    margin-bottom: 100px;
+}
+/*變成電腦的時候grid*/
+@media(min-width:720px){
+   
+    .row9_container_grid{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+        margin-bottom: 100px;
+    }
+}
+
+ul.under{
+    list-style-type: none;
+    align-items: center;
+    
+}
+.row9_text{
+    font-size: 12px;
+}
+li{
+    margin: 0 10px;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.row9_logo{
+    margin-top: 60px;
+    margin-left: 40px;
+    height: 40px;
+}
+.row9_text{
+    color:rgb(100, 100, 100);
+    line-height: 150%;
+    margin-left: 40px;
+}
+a.Contacts{
+    font-size: 12px;
+}
+a.Category{
+    font-size: 12px;
+}
+a.Service{
+    font-size: 12px;
+}
+
+a.Informattion{
+    font-size: 12px;
+}
